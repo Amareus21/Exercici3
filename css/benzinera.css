@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Bevan&family=Merriweather+Sans:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+  letter-spacing: 3px;
+  height: 100vh;
+  background-color: #ff6200;
+  font-family: "Merriweather Sans", sans-serif;
+}
+.titol {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+  font-family: "Bevan";
+  font-size: 1.5em;
+}
+#div-principal {
+  height: 100%;
+  display: block;
+}
+.div-llistes {
+  height: 15%;
+  background-color: #ff6200;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.container {
+  width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 20px;
+}
+.div-buscador {
+  width: 25%;
+}
+.list {
+  font-family: "Merriweather Sans", sans-serif;
+  height: 30px;
+  font-size: 1em;
+  padding: 0 10px;
+  width: 100%;
+}
+input[type="button"] {
+  font-family: "Merriweather Sans", sans-serif;
+  height: 34px;
+  background-color: #016a7f;
+  opacity: 1;
+  color: white;
+  border-radius: 10px;
+  border-color: transparent;
+  padding: 0 5px;
+  font-size: 1em;
+}
+input[type="button"]:disabled {
+  background-color: #016a7f;
+  opacity: 0.5;
+}
+.mapa {
+  height: 65%;
+}
+#map {
+  height: 100%;
+  display: none;
+}
+.footer {
+  background-color: #016a7f;
+  height: 10%;
+}
+#div-carrega {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+#loader {
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  border: 8px solid #ff6200;
+  border-radius: 50%;
+  border-top: 8px solid #016a7f;
+  border-bottom: 8px solid #016a7f;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  margin-bottom: 25px;
+}
+
+.p-loader {
+  width: 100%;
+  left: 0;
+  top: 55%;
+  z-index: 1;
+  text-align: center;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
